@@ -109,6 +109,11 @@
         padding-left: 0;
     }
     /* end blog page */
+    /* start content */
+    .contact .col {
+        width: 300px;
+    }
+    /* end content */
     /* start terms page */
     .terms .terms-content .container .terms-header h1 {
         font-size: 30px;

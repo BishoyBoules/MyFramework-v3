@@ -29,7 +29,7 @@ a {
 /* end global rules */
 /* start components */
 .container {
-    padding: 10px 100px;
+    padding: 0 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -126,6 +126,10 @@ i {
     height: 30px;
 }
 
+.navbar .container {
+    padding: 7px 100px;
+}
+
 .logo img {
     width: 50px;
     height: 50px;
@@ -206,12 +210,12 @@ i {
     background-position: center;
     z-index: -1;
     margin: 0;
+    min-height: 500px;
+    max-height: 500px;
 }
 
 .home .container figure img {
     width: 100%;
-    min-height: 500px;
-    max-height: 500px;
     margin: 0;
     padding: 0;
 }
@@ -224,7 +228,6 @@ i {
 .about .full-container h1 {
     margin-top: 0;
     padding-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
@@ -243,8 +246,8 @@ i {
 /* end about */
 /* start service */
 .service h1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
@@ -304,14 +307,20 @@ i {
 /* end service */
 /* start blog */
 .blog .blog-header h1 {
+    margin-top: 0;
+    padding-top: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
-    padding-top: 50px;
+}
+
+.blog .full-container .container {
+    justify-content: space-between;
 }
 
 .blog-card {
     margin-bottom: 10px;
+    /* border-bottom: 2px solid black; */
 }
 
 .blog-image {
@@ -334,7 +343,7 @@ i {
 }
 
 .blog .full-container .container .blog-card:last-child {
-    margin-right: -20px;
+    margin-right: -42px;
 }
 
 .blog-card-link {
@@ -366,19 +375,21 @@ i {
 /* end blog */
 /* start contact */
 .contact .container {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    justify-content: space-between;
 }
 
 .contact .contact-header h1 {
+    margin-top: 0;
+    padding-top: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
-    padding-top: 50px;
 }
 
 .contact .col {
     height: 600px;
-    width: 300px;
+    width: 500px;
 }
 
 .contact-info {
@@ -519,6 +530,14 @@ i {
     width: 100%;
     min-height: 600px;
     max-height: 600px;
+}
+
+.about-content h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .share-content p {
@@ -724,11 +743,8 @@ i {
 .primary-button .primary-button {
     margin: 25px 0;
 }
-
-#first-blog,
-#second-blog,
-#third-blog {
-    margin: 50px 0;
+.items {
+    margin-top: 50px;
 }
 
 .first-blog .container,
@@ -820,10 +836,11 @@ i {
 }
 
 .partners h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
-    padding-top: 50px;
 }
 
 .partners .container .partners-list ul {

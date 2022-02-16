@@ -1,11 +1,11 @@
 :root {
-    --main-color: green;
-    --secondary-color: rgb(30, 53, 30);
+    --main-color: #b4cfb0;
+    --secondary-color: #789395;
     --primary-background: #eee;
-    --default-background: #043a35;
-    --red-background: red;
-    --blue-background: blue;
-    --green-background: green;
+    --default-background: #573391;
+    --red-background: #9b0000;
+    --blue-background: #1c658c;
+    --green-background: #789395;
     --standard-color: white;
     --standard-text-color: black;
     --form-border-color: #c7c7c7;
@@ -15,6 +15,10 @@
 
 a {
     color: var(--standard-color);
+}
+
+.switch-style {
+    background-color: var(--main-color);
 }
 
 .secondary-button,
